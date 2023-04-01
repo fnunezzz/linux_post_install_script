@@ -49,7 +49,8 @@ nvm install --lts
 # GO
 wget https://dl.google.com/go/go$GO_VERSION.linux-amd64.tar.gz
 rm -rf /usr/local/go && tar -C /usr/local -xzf go$GO_VERSION.linux-amd64.tar.gz
-export PATH=$PATH:/usr/local/go/bin
+echo 'export PATH="$PATH:/usr/local/go/bin"' >> $HOME/.bashrc
+source $HOME/.bashrc
 
 # Python 3
 apt-get install python3 python3-dev
@@ -57,13 +58,16 @@ apt-get install python3 python3-dev
 
 # CopyQ https://github.com/hluk/CopyQ
 add-apt-repository ppa:hluk/copyq
-apt install copyq
+apt-get update && apt install copyq
 
 # Discord
 curl https://dl.discordapp.net/apps/linux/$DISCORD_VERSION/discord-$DISCORD_VERSION.deb -o discord-$DISCORD_VERSION.deb
 dpkg -i discord-$DISCORD_VERSION.deb
 
-
+# Spotify
+curl -sS https://download.spotify.com/debian/pubkey_7A3A762FAFD4A51F.gpg | gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
+echo "deb http://repository.spotify.com stable non-free" | tee /etc/apt/sources.list.d/spotify.list 
+apt-get update && apt-get install spotify-client
 
 
 
