@@ -9,6 +9,10 @@ apt install libgconf-2-4 libgconf-2-4 gconf-service gconf-service-backend gconf2
 
 cd $HOME/Downloads/
 
+# Chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -o google-chrome-stable_current_amd64.deb
+dpkg -i google-chrome-stable_current_amd64.deb
+
 # VSCode
 apt-get install wget gpg
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
