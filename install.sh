@@ -1,4 +1,4 @@
-GO_VERSION=$GO_VERSION
+GO_VERSION=1.20.2
 
 apt update;
 apt install htop;
