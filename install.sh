@@ -1,7 +1,11 @@
 GO_VERSION=1.20.2
+DISCORD_VERSION=0.0.26
 
 apt update;
 apt install htop;
+
+# Basic deps for Chrome, Discord and others
+apt install libgconf-2-4 libgconf-2-4 gconf-service gconf-service-backend gconf2-common libc++1 libc++1-14 libc++abi1-14 libgconf-2-4 libunwind-14libgconf-2-4
 
 cd $HOME/Downloads/
 
@@ -45,3 +49,25 @@ export PATH=$PATH:/usr/local/go/bin
 
 # Python 3
 apt-get install python3 python3-dev
+
+
+# CopyQ https://github.com/hluk/CopyQ
+add-apt-repository ppa:hluk/copyq
+apt install copyq
+
+# Discord
+curl https://dl.discordapp.net/apps/linux/$DISCORD_VERSION/discord-$DISCORD_VERSION.deb -o discord-$DISCORD_VERSION.deb
+dpkg -i discord-$DISCORD_VERSION.deb
+
+
+
+
+
+
+
+
+
+
+
+
+apt update
