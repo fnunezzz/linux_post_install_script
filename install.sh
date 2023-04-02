@@ -4,6 +4,9 @@ DISCORD_VERSION=0.0.26
 apt update;
 apt install htop;
 
+# Dock opacity Pop.OS only
+gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity 0.4
+
 # Basic deps for Chrome, Discord and others
 apt install libgconf-2-4 libgconf-2-4 gconf-service gconf-service-backend gconf2-common libc++1 libc++1-14 libc++abi1-14 libgconf-2-4 libunwind-14libgconf-2-4
 
@@ -70,11 +73,10 @@ echo "deb http://repository.spotify.com stable non-free" | tee /etc/apt/sources.
 apt-get update && apt-get install spotify-client
 
 
+#TODO: postman https://learning.postman.com/docs/getting-started/installation-and-updates/#installing-postman-on-linux
 
 
-
-
-
+#TODO: dbeaver https://dbeaver.io/download/
 
 
 
