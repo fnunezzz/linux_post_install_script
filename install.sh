@@ -79,5 +79,15 @@ apt-get update && apt-get install spotify-client
 #TODO: dbeaver https://dbeaver.io/download/
 
 
+#OpenVPN
+wget -O /etc/apt/sources.list.d/openvpn3.list https://swupdate.openvpn.net/community/openvpn3/repos/openvpn3-jammy.list
+apt update
+apt install openvpn3
+
+
+
+
+
+
 
 apt update
