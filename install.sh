@@ -103,3 +103,9 @@ apt install openvpn3
 
 
 apt update
+
+
+# To add multiple git users
+# https://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574
+# And multiple emails
+# https://stackoverflow.com/questions/4220416/can-i-specify-multiple-users-for-myself-in-gitconfig/43654115#43654115
