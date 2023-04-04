@@ -74,6 +74,18 @@ apt-get update && apt-get install spotify-client
 
 
 #TODO: postman https://learning.postman.com/docs/getting-started/installation-and-updates/#installing-postman-on-linux
+curl https://dl.pstmn.io/download/latest/linux_64 -o postman-linux-x64.tar.gz
+tar -xvf postman-linux-x64.tar.gz -C /opt/postman/
+echo "[Desktop Entry]
+Encoding=UTF-8
+Name=Postman
+Exec=/opt/postman/Postman/app/Postman %U
+Icon=/opt/postman/Postman/app/resources/app/assets/icon.png
+Terminal=false
+Type=Application
+Categories=Development;"> ~/.local/share/applications/Postman.desktop
+
+
 
 
 #TODO: dbeaver https://dbeaver.io/download/
